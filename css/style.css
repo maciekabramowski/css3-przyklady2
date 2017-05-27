@@ -36,9 +36,11 @@ img {
     float:right;
 }
 
+/*
 p:nth-child(3){
     clear: both;
 }
+*/
 
 #slonik {
     float: none;
@@ -60,3 +62,45 @@ p:nth-child(3){
     height: 300px;
     width: 300px;
 }
+
+#background{
+    height: 50vh;
+    background-color: aquamarine;
+/*
+    background-image: url(https://68.media.tumblr.com/avatar_42fe370ca389_128.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+*/
+    background: url(https://68.media.tumblr.com/avatar_42fe370ca389_128.png) center no-repeat fixed;
+    background-size: cover;
+}
+
+#overflow p {
+    width: 25%;
+    float: left;
+    height: 100px;
+}
+
+#overflow p:nth-child(even) {
+    background-color: antiquewhite;
+}
+
+#overflow p:nth-child(odd) {
+    background-color: cyan;
+}
+
+#overflow p:nth-child(2) {
+    overflow: hidden;
+}
+
+#overflow p:nth-child(3) {
+    overflow: scroll;
+}
+
+#overflow p:nth-child(4) {
+    overflow: auto;
+}
+
+
+
