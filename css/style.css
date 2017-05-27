@@ -1,3 +1,4 @@
+/*
 p {
     display: inline;
     font-size: 2em;
@@ -17,6 +18,7 @@ p:nth-child(even){
 p:nth-child(1n+3){
     display: block;
 }
+*/
 
 a{
     display: inline-block;
@@ -30,3 +32,31 @@ a{
     line-height: 250px;
 }
 
+img {
+    float:right;
+}
+
+p:nth-child(3){
+    clear: both;
+}
+
+#slonik {
+    float: none;
+    height: 100px;
+    width: 100px;
+/*
+    transition-property: all;
+    transition-duration: 5s;
+    transition-timing-function: linear;
+    transition-delay: 0.5s;
+*/
+    
+/*    transition: all 5s ease 0.5s;*/
+    
+    transition: width 5s linear .5s, height 3s linear .5s;
+}
+
+#slonik:hover{
+    height: 300px;
+    width: 300px;
+}
